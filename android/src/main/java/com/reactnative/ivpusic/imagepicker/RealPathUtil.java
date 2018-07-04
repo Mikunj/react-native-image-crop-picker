@@ -75,8 +75,8 @@ class RealPathUtil {
 
                 return getDataColumn(context, contentUri, selection, selectionArgs);
             }
-            
-            return getDataColumn(context, contentUri, null, null);
+
+            return getDataColumn(context, uri, null, null);
         }
         // MediaStore (and general)
         else if ("content".equalsIgnoreCase(uri.getScheme())) {
